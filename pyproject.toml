@@ -4,4 +4,6 @@ version = "0.1.0"
 description = "Alert system for email notifications"
 readme = "README.md"
 requires-python = ">=3.7"
-dependencies = []
+dependencies = [
+    "python-dotenv>=0.21.1",
+]
