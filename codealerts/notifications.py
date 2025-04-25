@@ -5,6 +5,16 @@ from .environment import load_env
 
 
 def send_email(subject: str, body: str) -> None:
+    """
+    Sends an email using Gmail service.
+
+    Input:
+    ------
+    subject: str
+        Subject of the email
+    body: str
+        Content of the email
+    """
     env = load_env()
 
     msg = MIMEText(body)
