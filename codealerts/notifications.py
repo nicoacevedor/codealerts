@@ -6,8 +6,6 @@ from .environment import load_env
 
 def send_email(subject: str, body: str) -> None:
     env = load_env()
-    # from_email = "nacevedo@meteodata.cl"
-    # from_password = "bdnu lelu vddi vxgf"
 
     msg = MIMEText(body)
     msg["Subject"] = subject

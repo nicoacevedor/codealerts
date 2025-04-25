@@ -5,10 +5,15 @@ from typing import Dict
 from dotenv import dotenv_values, set_key
 
 
-def load_env() -> Dict[str, str]:
+def check_env() -> None:
     env_file = Path().resolve() / ".notification_credentials"
     if not env_file.exists():
         create_env(env_file)
+    print(f"Using credentials from {env_file}")
+
+
+def load_env() -> Dict[str, str]:
+    env_file = Path().resolve() / ".notification_credentials"
     env_values = dotenv_values(env_file)
     return env_values
 
