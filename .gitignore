@@ -1,0 +1,11 @@
+# Test files
+user_test.py
+
+# Environment variables
+.notification_credentials
+
+# Virtual Environment
+.python-version
+
+# Compilation
+*.pyc
