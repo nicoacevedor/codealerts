@@ -6,6 +6,9 @@ from dotenv import dotenv_values, set_key
 
 
 def check_env() -> None:
+    """
+    Checks if environment file exists. If not, it is created.
+    """
     env_file = Path().resolve() / ".notification_credentials"
     if not env_file.exists():
         create_env(env_file)
